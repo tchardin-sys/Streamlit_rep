@@ -40,9 +40,9 @@ Path("models").mkdir(exist_ok=True, parents=True)
 joblib.dump({"model": model, "features": FEATURES}, "models/classifier.pkl")
 print("Saved → models/classifier.pkl")
 
-!pip -q install streamlit pyngrok
-!pip -q install pyngrok streamlit
-!pip -q install streamlit cloudflared
+#!pip -q install streamlit pyngrok
+#!pip -q install pyngrok streamlit
+#!pip -q install streamlit cloudflared
 
 %%writefile app.py
 # app.py — Streamlit frontend for housing quick-sale prediction
